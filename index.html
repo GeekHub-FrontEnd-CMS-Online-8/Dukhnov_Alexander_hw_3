@@ -9,49 +9,93 @@
 	<link href="img/faicon.png" rel="shortcut icon" type="image/x-icon">
 </head>
    <body>
-     <div class="content">
+     <header>
+      
+	  <h1>Урок "Формы": теги и их атрибуты.</h1>
+	  <h2>Расскажите немного о себе...</h2>
+	  <p>Попробуйте создать аналогичную форму.Для целей демонстрации вполне подойдет и вымышленные.</p>
+	  <form action="" method="GET">
+	 <fieldset>
+	   <legend class="bold">Коротко о себе</legend>
+	   <p><label for="name"> Имя:<input type="text" name="name" id="name"></label></p>
+	   <p><label for="surname"> Фамилия:<input type="text" name="surname" id="surname"></label></p>
+	   
+	   <p><label>Пол:
+	   <input type="radio" name="gender">мужской
+	   <input type="radio" name="gender">женский
+	   </label></p>
+	   <p><label for="age">Возраст:<input type="" name="age" id="age"></label>лет</p>
+	  </fieldset>
+	  
+	   
+	   <p><form action="" method="GET"></p>
+	   <fieldset>
+	   <legend class="bold">Подробнее о себе</legend>
+	   <label for="male"><input type="radio" name="sex" id="male">молодой человек</label><br>
+	   <label for="female"><input type="radio" name="sex" id="female">девушка
+	   </label><br>
+	   
+	   <label for="Birth" class="reduced"><input type="text" name="DateofBirth" id="Birth">Дата рождения</label><br>
+	   
+	   <label for="fs" class="reduced"><input type="text" name="Familystatus" id="fs">Семейное положение</label><br>
+	   
+	   <label for="sc" class="reduced"><input type="text" name="Socialstatus" id="sc">Социальный статус</label><br>
+	   
+	   <label for="Residence" class="reduced"><input type="text" name="Residence" id="Residence">Местожительство</label>
+	   
+	   <p><label class="bold">Что обычно делаете на выходных:</label></p>
+	   <label><input type="checkbox" name="sleep">Сплю</label><br>
+	   <label><input type="checkbox" name="friends" >Гуляю с друзьями</label><br>
+	   <label><input type="checkbox" name="fising" >Хожу на рыбалку</label><br>
+	   <label><input type="checkbox" name="play" >Играю в игры</label>
+	   
+	   <p><label class="bold">Рассказать о формах в книге,посвященной HTML:</label></p>
+	   <p><select>
+	   <option>Site frequency:</option>
+	   </select></p>
+	   
+	   <p><label class="bold">Сколько книг вы прочитали за свою жизнь:</label></p>
+	   <label><input type="radio" name="number">0-10<br>
+	   <input type="radio" name="number">11-20<br>
+	   <input type="radio" name="number">21-50<br>
+	   <input type="radio" name="number">50+</label>
 	 
-	  <h1 class="textcenter">The Darknet and the Future of Content Distribution</h1>
-	  <p class="textcenter">Peter Biddle, Paul England, Marcus Peinado, and Bryan Willman</em>
-	  <h3 class="textcenter">Microsoft Corporation</h3>
-	    
-	  <h2>1 Introduction</h2>
-	  <p class="bold">People have always copied things. In the past, most items of value were physical objects.Patent law and economies of scale meant that small scale copying of physical objects was usually uneconomic, and large-scale copying (if it infringed) was stoppable using policemen and courts.Today, things of value are increasingly less tangible: often they are just bits and bytes or can be accurately represented as bits and bytes.</p>
-	  <p>The widespread deployment of packet-switched networks and the huge advances in computers and codec-technologies has made it feasible (and indeed attractive) to deliver such digital works over the Internet.This presents great opportunities and great challenges. The opportunity is low-cost delivery of personalized, desirable high-quality content.The challenge is that such content can be distributed illegally.Copyright law governs the legality of copying and distribution of such valuable data, but copyright protection is increasingly strained in a world of programmable computers and high-speed networks.</p>
-	  <p class="textindent">For example, consider the staggering burst of creativity by authors of computer programs that are designed
-	  to share audio files. This was first popularized by Napster, but today several popular applications and
-	  services offer similar capabilities.CD-writers have become mainstream, and DVD-writers may well follow suit.Hence, even in the absence of network connectivity, the opportunity for low-cost, large-scale file sharing exists.</p>
+	  <p><label class="bold">Ваши комментарии:</p>
+	  <textarea name="comment" id="" cols="50" rows="10"></textarea></label>
 	  
-	  <h2>2 The Darknet</h2>
-	  <p>Throughout this paper, we will call the shared items (e.g. software programs, songs, movies, books, etc.) objects<span class="underline">. The persons who copy objects</span> will be called users of the darknet, and the computers used to share objects will be called hosts.</p>
-	  <p>The darknet is the distribution network that emerges from the injection of objects according to assumption 1 and the distribution <span class="bold">of those objects according to assumptions 2 and 3</span>.</p>
-	  <p>One  implication  of  the  first  assumption  is  that  any  content  protection  system  will  leak  popular  or  interesting  content  into  the  darknet,  because  some  fraction  of  users--possibly  experts–will  overcome  any  copy  prevention  mechanism  or  because  the  object  will  enter  the  darknet  before  copy  protection  occurs.</p>
-	  <p><span class="bold">The term “widely distributed”</span> is intended to capture the notion of mass market distribution of objects to thousands or millions of practically anonymous users. <span class="underline"><i>This is in contrast to the protection of military</i></span>, industrial, or personal secrets, which are typically not widely distributed and are not the focus of this paper.</p>
+	   <p><select multiple size="3">
+          <option>Первая позиция</option>
+          <option>Вторая позиция</option>
+		  <option>Третья позиция</option>
+       </select></p>
+	  </fieldset>
+	  </form> 
 	  
-	  <h2>2.1 Central Internet Servers</h2>
-	  <p>By 1998, a new form of the darknet began to emerge from technological advances in several areas. The internet had become mainstream, and as such its protocols and infrastructure could now be relied upon by anyone seeking to connect users with a centralized service or with each other. The continuing fall in the price of storage together with advances in compression technology had also crossed the threshold at which storing large numbers of audio files was no longer an obstacle to mainstream users. Additionally, the power of computers had crossed the point at which they could be used as rendering devices for multimedia content. Finally, “CD ripping” became a trivial method for content injection.</p>
-	  <p class="bii"><img class="leftimg" src="img/protection.JPG" alt="protection">The first embodiments of this new darknet were central internet servers with large collections of MP3 audio files. A fundamental change that came with these servers was the use of a new distribution network: The internet displaced the sneaker net – at least for audio content. This solved several problems of the old darknet. First, latency was reduced drastically.</p>
-	  <p>Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose world-wide-web search engine. The local view of the small world was replaced by a global view of the entire collection accessible by all users. The main characteristic of this form of the darknet was centralized storage and search – a simple architecture that mirrored mainstream internet servers.</p>
+	  <form action="" method="GET">
+	   <fieldset>
+	    <legend class="bold">И в заключении</legend>
+	   
+	    <label for="field">
+	    <input type="text" placeholder="это поле было введено до вас" id="field"></label>
 	  
-	  <h2>2.2 Central Internet Servers</h2>
-	  <p class="italicright">Centralized or quasi-centralized distribution and service networks make sense for legal online commerce. Bandwidth and infrastructure costs tend to be low, and having customers visit a commerce site means the merchant can display adverts, collect profiles, and bill efficiently. Additionally, management, auditing, and accountability are much easier in a centralized model.</p>
-	  <img class="centerimg" src="img/opossum.JPG" alt="opposum">
-	  <p>However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure: If the distributor is breaking the law, it is relatively easy to force him to stop. Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs. Copyright-holders or their representatives sent “cease and desist” letters to these web-site operators and web-owners citing copyright infringement and in a few cases followed up with legal action [15]. The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.</p><br>
-	  <p>
-	   <ul>
-	  	<li>However, centralized schemes work poorly for illegal object distribution because large, central servers are large single points of failure</li>
-	  	<li>Early MP3 Web and FTP sites were commonly “hosted” by universities, corporations, and ISPs. Copyright-holders or their representatives sent “cease and desist” letters</li>
-	  	<li>The threats of legal action were successful attacks on those centralized networks, and MP3 web and FTP sites disappeared from the mainstream shortly after they appeared.</li>
-	   </ul></p><br>
-	   <p>
-	   <ol>
-	   	<li>Secondly, and more importantly, discovery of objects became much easier because of simple and powerful search mechanisms – most importantly the general-purpose</li>
-	   	<li>distributor is breaking the law, it is relatively easy to force him to stop. Early MP3 Web and FTP sites were commonly “hosted” by universities</li>
-	   	<li>By 1998, a new form of the darknet began to emerge from technological advances in several areas. The internet had become mainstream, and as such its protocols and infrastructure</li>
-	   </ol>
-	  </p>
+	    <p><label class="bold">Email<br><input type="email"></label></p>
 	  
-	 </div>
+	    <p><label class="bold">Хотите подписаться на самую модную рассылку спама?</label><br>
+	    <span class="italic">Выберите категории</span></p>
+	    <label>
+	    <input type="checkbox" name="equipment">Оборудование<br>
+	    <input type="checkbox" name="dinner">Как приготовить обеды<br>
+	    <input type="checkbox" name="million">Заработай миллион за два дня!<br>
+	    </label>
+	  
+	    <p><label class="bold">На сколько сложная задача:</label></p>
+	    <input type="radio" name="answer" value="a1">Совсем нет<br>
+	    <input type="radio" name="answer" value="a2">Так себе<br>
+	    <input type="radio" name="answer" value="a3">Еле справились<br>
+	   </fieldset>
+	   <p><label><input type="submit"></label></p>
+	  </form>
+	 </header>
    </body>
 	 
 	 
