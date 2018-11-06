@@ -19,7 +19,31 @@ header {
 	font-style: italic;
 }
 
+.table1 {
+	width: 75%;
+	border: 1px double black; 
+    border-collapse: separate;
+	margin: auto;
+	}
 
+th, td {
+	border: 1px solid black;
+	background: white;
+	padding: 4px;
+}
 
+.table2 {
+	width: 45%;
+	border: 1px double black; 
+    border-collapse: separate;
+	margin: auto;
+}
 
-
+.table3 {
+	width: 45%;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-color: grey;
+	margin: auto;
+	background-color: grey;
+}
