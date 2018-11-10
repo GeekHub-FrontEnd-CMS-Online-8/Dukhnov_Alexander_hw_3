@@ -15,21 +15,21 @@
 	  <h2>Расскажите немного о себе...</h2>
 	  <p>Попробуйте создать аналогичную форму.Для целей демонстрации вполне подойдет и вымышленные.</p>
 	  
-	  <form action="" method="GET">
+	  <form action="#" method="GET">
 	 <fieldset>
 	   <legend class="bold">Коротко о себе</legend>
 	   <p><label for="name"> Имя:<input type="text" name="name" id="name"></label></p>
 	   <p><label for="surname"> Фамилия:<input type="text" name="surname" id="surname"></label></p>
 	   
 	   <p><label>Пол:
-	   <input type="radio" name="gender">мужской
-	   <input type="radio" name="gender">женский
+	   <input type="radio" name="gender">мужской</label>
+	   <label><input type="radio" name="gender">женский
 	   </label></p>
-	   <p><label for="age">Возраст:<input type="" name="age" id="age"></label>лет</p>
+	   <p><label for="age">Возраст:<input type="text" name="age" id="age"></label>лет</p>
 	  </fieldset>
-	  
+	  </form>
 	   
-	   <p><form action="" method="GET"></p>
+	   <form action="#" method="GET">
 	   <fieldset>
 	   <legend class="bold">Подробнее о себе</legend>
 	   <label for="male" class="reduced"><input type="radio" name="sex" id="male">Молодой человек</label><br>
@@ -56,13 +56,13 @@
 	   </select></p>
 	   
 	   <p><label class="bold">Сколько книг вы прочитали за свою жизнь:</label></p>
-	   <label><input type="radio" name="number">0-10<br>
-	   <input type="radio" name="number">11-20<br>
-	   <input type="radio" name="number">21-50<br>
-	   <input type="radio" name="number">50+</label>
+	   <label><input type="radio" name="number">0-10<br></label>
+	   <label><input type="radio" name="number">11-20<br></label>
+	   <label><input type="radio" name="number">21-50<br></label>
+	   <label><input type="radio" name="number">50+</label>
 	 
-	  <p><label class="bold">Ваши комментарии:</p>
-	  <textarea name="comment" id="" cols="50" rows="10"></textarea></label>
+	  <p><label class="bold">Ваши комментарии:</label></p>
+	  <label><textarea name="comment" id="#" cols="50" rows="10"></textarea></label>
 	  
 	   <p><select multiple size="3">
           <option>Первая позиция</option>
@@ -72,7 +72,7 @@
 	  </fieldset>
 	  </form> 
 	  
-	  <form action="" method="GET">
+	  <form action="#" method="GET">
 	   <fieldset>
 	    <legend class="bold">И в заключении</legend>
 	   
@@ -84,8 +84,10 @@
 	    <p><label class="bold">Хотите подписаться на самую модную рассылку спама?</label><br>
 	    <span class="italic">Выберите категории</span></p>
 	    <label>
-	    <input type="checkbox" name="equipment">Оборудование<br>
-	    <input type="checkbox" name="dinner">Как приготовить обеды<br>
+	    <input type="checkbox" name="equipment">Оборудование<br></label>
+		<label>
+	    <input type="checkbox" name="dinner">Как приготовить обеды<br></label>
+		<label>
 	    <input type="checkbox" name="million">Заработай миллион за два дня!<br>
 	    </label>
 	  

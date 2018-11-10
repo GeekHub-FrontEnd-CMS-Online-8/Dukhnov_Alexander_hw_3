@@ -47,3 +47,7 @@ th, td {
 	margin: auto;
 	background-color: grey;
 }
+
+.margin1, .margin2 {
+	margin-top: 2%;
+}
